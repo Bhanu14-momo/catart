@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Forsythe</title>
+    <link rel="stylesheet" href="commission-form.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Commission Form</h1>
+        <p>After you complete this form, I will contact you to confirm details and pricing. My system starts with a sketch of the idea you send, and once that's confirmed, you will be required to send payment in order to receive the artwork.</p>
+        <form action="#" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="name">Your Name <span class="required">*</span></label>
+                <input type="text" id="name" name="name" required placeholder="John Doe">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address <span class="required">*</span></label>
+                <input type="email" id="email" name="email" required placeholder="john.doe@example.com">
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number <span class="required">*</span></label>
+                <input type="tel" id="phone" name="phone" required placeholder="(555) 123-4567">
+            </div>
+
+            <div class="form-group">
+                <label for="contact-method">Preferred Contact Method <span class="required">*</span></label>
+                <select id="contact-method" name="contact-method" required>
+                    <option value="phone">Phone (Text)</option>
+                    <option value="email">Email</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="commission-type">What sort of commission are you wanting done? <span class="required">*</span></label>
+                <select id="commission-type" name="commission-type" required>
+                    <option value="pet-portrait">Pet Portrait</option>
+                    <option value="portrait">Portrait</option>
+                    <option value="logo">Logo/Design</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="medium">What medium would you like for the artwork to be in? <span class="required">*</span></label>
+                <select id="medium" name="medium" required>
+                    <option value="oil">Oil</option>
+                    <option value="acrylic">Acrylic</option>
+                    <option value="graphite">Black and White Graphite</option>
+                    <option value="pencil">Color Pencil</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="size">Do you have a specific size? If so, type it in inches (L x W x H) <span class="required">*</span></label>
+                <input type="text" id="size" name="size" placeholder="e.g., 16 x 20 x 1" required>
+            </div>
+
+            <div class="form-group">
+                <label for="reference-images">Do you have reference images? Please upload them here:</label>
+                <input type="file" id="reference-images" name="reference-images" accept="image/*, .pdf, .mp4" multiple>
+            </div>
+
+            <div class="form-group">
+                <label for="deadline">Is there a deadline for this commission?</label>
+                <input type="date" id="deadline" name="deadline">
+            </div>
+
+            <div class="form-group">
+                <label for="payment-method">Preferred Payment Method <span class="required">*</span></label>
+                <select id="payment-method" name="payment-method" required>
+                    <option value="paypal">PayPal</option>
+                    <option value="cashapp">CashApp</option>
+                    <option value="zelle">Zelle</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="comments">Questions and Comments</label>
+                <textarea id="comments" name="comments" placeholder="Let me know if you have any questions or additional requests."></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit">Submit Commission</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
